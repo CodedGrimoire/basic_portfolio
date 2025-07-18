@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes bouncy {
+            from{
+                left:0 px;
+               
+            }
+            to{
+                left:400px;
+                top: 30px;
+            }
+        }
+        .stage{
+            width: 700px;
+            height: 500px;
+            background-color: #ae59a5;
+            position: relative;
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            background-color: #560505;
+            border-radius: 50%;
+            position: absolute;
+            top: 225px; /* Center vertically */
+            left: 225px; /* Center horizontally */
+            animation: bouncy 2s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div class="stage">
+        <div class="ball">
+            
+        </div>
+
+    </div>
+    
+</body>
+</html>
